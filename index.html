@@ -16,13 +16,47 @@
     <!--This is how we import syling to our html. It loads after the html doc and applies css styling to the essisting elements-->
     <title>Henry's website</title>
     <!-- This title shows up on the browser tag and as the headline for search engine -->
+     <style>
+      body {
+        background-color: darkslategray;
+      }
+      h1 {
+        color: antiquewhite;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      h2 {
+        color: antiquewhite;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      p {
+        font-family: sans-serif;
+      }
+      .music {
+        color: blueviolet;
+      }
+      #Gardening {
+        color: green;
+      }
+      #Baking {
+        color: chocolate;
+      }
+     </style>
   </head>
   <body>
     <h1>Henry's website</h1>
 
     <h2>Bio</h2>
+    <p>I am interested in computer programming and <span class="music">music</span>. I am currently learning about HTML and CSS.</p>
 
     <h2>My hobbies</h2>
-    <img href="IMG20230731103915.jpg">
+    <img src="IMG20230731103915.jpg" width="250" alt="A picture of a venus fly trap plant.">
+
+    <p>Some of my hobbies include:</p>
+    <ul>
+      <li id="Gardening">Gardening</li>
+      <li class="music">Playing music</li>
+      <li id="Baking">Baking</li>
+    </ul>
+
   </body>
 </html>
